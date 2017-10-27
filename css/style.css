@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+  font-size: 1.4rem;
+  font-family: 'Open Sans', sans-serif;
+  color: #6B6B6B;
+  background: #F2F2F2;
+}
+
+img {
+  min-width: 100%;
+}
+
+p, h1 {
+  margin: 0;
+}
+
+.content {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+
+/* Start of HEADER/SLIDER content*/
+
+
+header {
+  position: fixed;
+  background: #363636;
+  height: 75px;
+  z-index: 1;
+  width: 100%;
+}
+
+header section {
+  overflow: hidden;
+  padding: 0 15px;
+}
+
+header section .logo h1{
+  float: left;
+  color: #DADADA;
+  font-size: 2rem;
+  font-family: 'Roboto Slab';
+  font-weight: bolder;
+  line-height: 7.5rem;
+}
+
+header section nav {
+  float: right;
+  padding-right: 15px;
+}
+
+header section nav ul {
+  line-height: 7.5rem;
+  margin: 0;
+}
+
+header section nav li {
+  display: inline-block;
+  padding-left: 10px;
+}
+
+header section nav li a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  transition: color 0.5s;
+}
+
+header section nav li a:hover {
+  color: #DA4453;
+}
+
+#slider {
+  position: relative;
+  padding-top: 75px;
+  min-height: 420px;
+  background: url(../img/slider_image.jpg) 100% 100% no-repeat;
+  background-size: cover;
+}
+
+.slider-header {
+  position: absolute;
+  padding: 15px;
+  left: 0;
+  right: 0;
+  max-width: 1170px;
+  margin: 0 auto;
+  bottom: 50px;
+}
+
+.slider-header h2 {
+  display: inline-block;
+  background: rgba(218, 68, 83, 0.7);
+  font-family: 'Roboto Slab';
+  font-size: 2.4rem;
+  font-weight: bolder;
+  color: #FFFFFF;
+  padding: 12px 20px;
+  margin: 0;
+}
+
+.slider-header h3 {
+  background: rgba(59, 59, 59, 0.8);
+  color: #DDDDDD;
+  padding: 12px 20px;
+  margin: 0;
+  max-width: 600px;
+}
+
+/* End of HEADER/SLIDER content*/
+
+/* Start of MAIN-Left content */
+
+main {
+  overflow: hidden;
+}
+
+main section {
+  max-width: 780px;
+  width: 70%;
+  padding: 15px;
+  float: left;
+}
+
+main article {
+  color: #6B6B6B;
+  font-size: 1.4rem;
+  margin-bottom: 35px;
+}
+
+main article img {
+  transition: opacity 0.5s;
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+main article img:hover {
+  opacity: 0.8;
+}
+
+main article .article-content {
+  background: #FFFFFF;
+  border: 1px solid #DADADA;
+  padding: 45px 50px;
+}
+
+main article .article-content .article-heading {
+  font-family: 'Roboto Slab';
+  color: #444444;
+  text-decoration: none;
+  font-size: 2.8rem;
+  margin-bottom: 30px;
+  font-weight: bold;
+  transition: color 0.5s;
+}
+
+main article .article-content .article-heading:hover {
+  color: #DA4453;
+}
+
+main article .article-content .article-meta {
+  margin-bottom: 30px;
+}
+
+main article .article-content .article-meta a {
+  font-size: 1.3rem;
+  color: #6B6B6B;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+main article .article-content {
+  margin-bottom: 10px;
+  line-height: 1.7;
+
+}
+
+main article .article-content .article-actions {
+  text-align: right;
+  padding: 10px 0;
+}
+main article .article-content .article-actions .read-more {
+  background: #DA4453;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 1.3rem;
+  padding: 11px 13px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  transition: background 0.5s;
+  border: 1px solid #DA4453;
+  display: inline-block;
+}
+
+main article .article-content .article-actions .read-more:hover {
+  background: #000000;
+  border-color: #000000;
+}
+
+main aside {
+  max-width: 390px;
+  width: 30%;
+  margin: 15px;
+  float: right;
+}
+
+main aside .aside-content {
+  padding: 30px;
+  background: #FFFFFF;
+  border: 1px solid #DADADA;
+  border-radius: 4px;
+}
+
+main .aside-content .widjet {
+  margin-bottom: 50px;
+}
+
+main .aside-content .widjet h3 {
+  font-family: 'Roboto Slab';
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #636467;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+
+/* End of MAIN-Left content */
+
+/* Here FIRST BLOCK of widjets START*/
+
+main .aside-content .widjet .links ul {
+  overflow: hidden;
+  padding: 0;
+}
+
+main .aside-content .widjet .links ul li{
+  list-style: none;
+  text-align: center;
+  float: left;
+  margin: 0 15px 15px 0;
+}
+
+main .aside-content .widjet .links ul a{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 3px;
+  background: #C1C0C0;
+  color: #ffffff;
+  font-size: 1.8rem;
+  line-height: 40px;
+  margin: auto;
+  transition: background 0.5s;
+}
+
+main .widjet .links ul li:nth-child(1) a:hover {
+  background: #55ACEE;
+}
+
+main .widjet .links ul li:nth-child(2) a:hover {
+  background: #4265b9;
+}
+
+main .widjet .links ul li:nth-child(3) a:hover {
+  background: #df3333;
+}
+
+main .widjet .links ul li:nth-child(4) a:hover {
+  background: #d62408;
+}
+
+main .widjet .links ul li:nth-child(5) a:hover {
+  background: #5B8BB4;
+}
+
+/* Here FIRST BLOCK of widjets END*/
+
+
+/* Here SECOND BLOCK of widjets START*/
+
+main .widjet .last-comments ul {
+  padding: 0;
+}
+
+main .widjet .last-comments ul li{
+  list-style: none;
+  border-bottom: 1px solid #F0F0F0;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+main .widjet .last-comments ul li span{
+  font-weight: 700;
+}
+
+main .widjet .last-comments ul a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: #C1C0C0;
+}
+
+/* Here SECOND BLOCK of widjets END*/
+
+/* Here THIRD BLOCK of widjets START*/
+
+main .widjet:last-child {
+  margin-bottom: 0px;
+}
+
+main .widjet .tag-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+main .widjet .tag-links a {
+  text-decoration: none;
+  background: #DADADA;
+  margin: 0 1px 4px;
+  padding: 6px 7px;
+  color: #FFFFFF;
+  border-radius: 3px;
+  font-size: 1.2rem;
+  transition: background 0.5s;
+}
+
+main .widjet .tag-links a:hover {
+  background: #DA4453;
+}
+
+/* Here THIRD BLOCK of widjets END*/
+
+
+/* Start of FOOTER content*/
+
+footer {
+  width: 100%;
+  background: #1F1F1F;
+  padding: 10px 0;
+}
+
+footer .footer-content {
+  overflow: hidden;
+}
+
+footer .footer-content nav {
+  max-width: 50%;
+  float: left;
+}
+
+footer .footer-content nav ul {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+footer .footer-content nav ul li {
+  list-style: none;
+  float: left;
+  padding: 10px 15px;
+}
+
+footer .footer-content nav ul li a{
+  color: #DADADA;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  transition: color 0.5s;
+}
+
+footer .footer-content nav ul li a:hover{
+  color: #FFFFFF;
+}
+
+footer .copy {
+  max-width: 50%;
+  float: right;
+  font-size: 1.2rem;
+  padding: 10px 15px;
+  color: #999999;
+}
+
+footer .copy a {
+  color: #DADADA;
+  text-decoration: none;
+}
+
+/* END of FOOTER content*/
